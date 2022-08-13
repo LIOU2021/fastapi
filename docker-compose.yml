@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    python:
+        build:
+            context: ./fastapi_docker
+        restart: always
+        container_name: python
+        volumes:
+            - ${APP_PATH}:/app
+        ports:
+            - "82:80"
+        stdin_open: true
+        tty: true
+        networks:
+            - fastapi_lnmp
+
+networks:
+    fastapi_lnmp:
