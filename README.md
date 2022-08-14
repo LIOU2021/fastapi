@@ -13,7 +13,7 @@ FastAPI stands on the shoulders of giants:
 * <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> for the web parts.
 * <a href="https://pydantic-docs.helpmanual.io/" class="external-link" target="_blank">Pydantic</a> for the data parts.
 
-## proccess
+## process
 - 當uvicorn運行 --reload 模式時，fastapi開啟的進程只會有一個，也無法使用<a hre="https://fastapi.tiangolo.com/de/deployment/server-workers/#uvicorn-with-workers">--workers</a>參數
 - 當uvicorn運行production模式時(uvicorn main:app --host 0.0.0.0 --port 80)，此時的進程數將根據機器的CPI計算且分配。<a href="https://fastapi.tiangolo.com/deployment/docker/#number-of-processes-on-the-official-docker-image">參考</a>
 
