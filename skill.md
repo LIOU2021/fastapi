@@ -1,1 +1,0 @@
-- [Python FastAPI 快速入門](https://linyencheng.github.io/2021/10/08/python-fast-api/)

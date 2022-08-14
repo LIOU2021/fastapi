@@ -1,0 +1,2 @@
+- [Python FastAPI 快速入門](https://linyencheng.github.io/2021/10/08/python-fast-api/)
+- [很火的Fastapi框架，用async函数真的比普通函数快吗？](https://blog.csdn.net/yyw794/article/details/108859240)
