@@ -24,3 +24,9 @@ async def test_proccess():
 @app.get("/items/{item_id}")
 async def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q, 'say': "hi"}
+
+
+@app.get("/query")
+async def read_query(skip: int = 0, limit: int = 10):
+    fake_items_db = [{"item_name": "Foo"}, {"item_name": "Bar"}, {"item_name": "Baz"}]
+    return fake_items_db[skip : skip + limit]
